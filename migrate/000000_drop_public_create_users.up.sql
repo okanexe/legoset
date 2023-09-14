@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS lego_sets (
+    code VARCHAR(255) PRIMARY KEY,
+    name VARCHAR(255),
+    piece_count INT,
+    image_url VARCHAR(255),
+    price DECIMAL(10, 2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
